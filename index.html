@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шоколадка Алёнка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/itc-slider.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto:wght@300&family=Tektur&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <h4 class="logo">Сладкий уголок</h4>
+                <iframe class="hello" scrolling="no" frameborder="no" clocktype="html5"
+                    style="overflow:hidden;border:0;margin:0;padding:0;width:200px;height:200px;"
+                    src="https://www.clocklink.com/html5embed.php?clock=007&timezone=USZ4&color=gray&size=200&Title=&Message=&Target=&From=2023,1,1,0,0,0&Color=gray"></iframe>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Корзина</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Другой шоколад</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Реклама</a>
+                    </li>
+                </ul>
+                <div class="burger" onclick=" showMenu()">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                </div>
+            </nav>
+
+
+            <button id="btn-menu" class="btn_menu">Меню</button>
+            <div id="menu" class="header__menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="list_link">Вход</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="list_link">Корзина</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="list_link">Акции</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="list_link">Реклама</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <section class="video-bg">
+            <video id="video_id" class="video" autoplay muted loop>
+                <source src="video/video(shop).mp4" type="video/mp4">
+
+            </video>
+            <div class="video_content">
+
+                Шоколад «Алёнка» — молочный шоколад, изготавливавшийся в СССР с 1965
+                года, а
+                позднее
+                производимый в России, в том числе на кондитерской фабрике «Красный Октябрь» (с 1966
+                года).
+                Отличительной особенностью является кремовый, «жирный» вкус.
+                Выпускается в форме плитки шоколада массой 100 г, поделённой на 3×5 сегментов с надписью
+                «Красный
+                Октябрь» на каждом, на обёртке изображена девочка в платочке.
+
+                Состав классического молочного шоколада «Алёнка»: сахар, молоко сухое цельное,
+                какао-масло, какао
+                тёртое, эмульгатор лецитин, идентичный натуральному ароматизатор .
+
+
+
+
+            </div>
+            <div class="video_controls">
+                <button class="video-bg__btn" id="stop" onclick="contrlStop()">Пауза</button>
+                <button class="video-bg__btn" id="sound" onclick="contrlSound()">Звук</button>
+                <button class="video-bg__btn" id="prev">Назад</button>
+                <button class="video-bg__btn" id="next" onclick="contrlNext()">Следуещее</button>
+
+            </div>
+
+
+
+
+
+        </section>
+        <section class="shop">
+            <div class="container">
+                <h1 class="shop_title">Шоколад Алёнка</h1>
+
+                <div class="itc-slider" data-slider="itc-slider">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                            <div class="itc-slider-item">
+                                <img src="img/Alenka.jpg" class="shop_img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/Alenka2.jpg" class="shop_img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/Alenka3.jpg" class="shop_img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/Alenka4.jpg" class="shop_img">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img src="img/Alenka5.jpg" class="shop_img5">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                    <button class="itc-slider-btn itc-slider-btn-next"></button>
+                </div>
+
+                <div class="accordion" id="accordion-1">
+                    <div class="accordion__item">
+                        <h2 class="accordion__header">О товаре</h2>
+                        <div class="accordion__body">
+                            <p class="shop_text">Шоколад «Алёнка» — молочный шоколад, изготавливавшийся в СССР с 1965
+                                года, а
+                                позднее
+                                производимый в России, в том числе на кондитерской фабрике «Красный Октябрь» (с 1966
+                                года).
+                                Отличительной особенностью является кремовый, «жирный» вкус.
+                                Выпускается в форме плитки шоколада массой 100 г, поделённой на 3×5 сегментов с надписью
+                                «Красный
+                                Октябрь» на каждом, на обёртке изображена девочка в платочке.
+
+                                Состав классического молочного шоколада «Алёнка»: сахар, молоко сухое цельное,
+                                какао-масло, какао
+                                тёртое, эмульгатор лецитин, идентичный натуральному ароматизатор (ванилин).
+
+                                В 2000-х годах начался выпуск и других сортов под брендом «Алёнка»
+                                В 1990-е годы поменялась упаковка шоколада: плитка заворачивается в обёртку (раньше
+                                плитка
+                                вставлялась в
+                                обёртку, при этом плитки меньшего веса по-прежнему вставляются в упаковку). Кроме
+                                традиционной
+                                плитки в
+                                100 г некоторые предприятия выпускают плитки по 200 г, 60 г, 20 г и 15 г. Также под этой
+                                маркой
+                                начат
+                                выпуск и шоколадных конфет, обертки которых украшены всё тем же изображением.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <h2 class="accordion__header">Цена</h2>
+                        <div class="accordion__body">
+                            <p class="shop_price">79 рублей</p>
+                            <button type="button" class="shop_btn" id="btn" onclick="buy()">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+        <section class="maps">
+            <div class="container">
+                <h2 class="maps__title">
+                    Мы находимся здесь!
+                </h2>
+                <div class="google">
+                    <h3 class="google__maps">Google</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d941.8691343908281!2d60.62389747522929!3d56.9393539209686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sru!4v1689863593446!5m2!1sru!2sru"
+                        width="100%" height="662" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="yandex">
+                    <h3 class="yandex__map">Яндекс</h3>
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A690a9528306f7c83ab50264a72269441adb31302e69f1631517aa84876011bc9&amp;source=constructor"
+                        width="100%" height="662" frameborder="0"></iframe>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+        </section>
+        <section>
+            <div class="container">
+                <ul class="card-zone">
+                    <li>
+                        <div class="card me-4" style="width: 18rem;">
+                            <img src="img/Alenka2.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Шоколад Alenka</h5>
+                                <p class="card-text">GOOD CHOKOLADE</p>
+                                <a href="#" class="btn btn-primary">Купить</a>
+                    </li>
+                        
+                    <li>
+                        <div class="card me-4" style="width: 18rem;">
+                            <img src="img/AlenkaKonf2.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Конфеты Аленка</h5>
+                                <p class="card-text">GOOD CHOKOLADE</p>
+                                <a href="#" class="btn btn-primary">Купить</a>
+                    </li>
+                    <li>
+                        <div class="card me-4" style="width: 18rem;">
+                            <img src="img/AlenkaKonf3.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Конфеты Аленка
+                                    в стиках
+                                </h5>
+                                <p class="card-text">GOOD CHOKOLADE</p>
+                                <a href="#" class="btn btn-primary">Купить</a>
+                    </li>
+                    <li>
+                        <div class="card" style="width: 18rem;">
+                            <img src="img/AlenkaKonf4.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Конфеты Аленка
+                                    в стиках
+                                </h5>
+                                <p class="card-text">GOOD CHOKOLADE</p>
+                                <a href="#" class="btn btn-primary">Купить</a>
+                    </li>
+                        </div>
+                </ul>
+            </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </section>
+        <section class="time">
+            <div class="time_container">
+                <div class="time_content" id="time">
+
+
+                </div>
+
+            </div>
+            <iframe scrolling="no" frameborder="no" clocktype="html5"
+                style="overflow:hidden;border:0;margin:0;padding:0;width:380px;height:80px;"
+                src="https://www.clocklink.com/html5embed.php?clock=047&timezone=USZ4&color=orange&size=380&Title=&Message=&Target=&From=2023,1,1,0,0,0&Color=orange"></iframe>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container container_footer">
+            <p class="footer_text">
+                &copy; Сладкий уголок 2022г.
+            </p>
+        </div>
+
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/itc-slider.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/accordion.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/time.js"></script>
+    <script src="scripts/video_controls.js"></script>
+    <script src="scripts/bootstrap/bootstrap.js"></script>
+
+</body>
+
+</html>
